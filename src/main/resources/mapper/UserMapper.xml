@@ -9,22 +9,40 @@
         id,name,password,phone
     </sql>
 
+    <!--<insert id="insert" parameterType="com.example.demo.domain.UserDomain">-->
+        <!--INSERT INTO-->
+        <!--<include refid="BASE_TABLE"/>-->
+        <!--<trim prefix="(" suffix=")" suffixOverrides=",">-->
+            <!--userName,password,-->
+            <!--<if test="phone != null">-->
+                <!--phone,-->
+            <!--</if>-->
+        <!--</trim>-->
+        <!--<trim prefix="VALUES(" suffix=")" suffixOverrides=",">-->
+            <!--#{userName, jdbcType=VARCHAR},#{password, jdbcType=VARCHAR},-->
+            <!--<if test="phone != null">-->
+                <!--#{phone, jdbcType=VARCHAR},-->
+            <!--</if>-->
+        <!--</trim>-->
+    <!--</insert>-->
+
     <insert id="insert" parameterType="com.example.demo.domain.UserDomain">
-        INSERT INTO
-        <include refid="BASE_TABLE"/>
-        <trim prefix="(" suffix=")" suffixOverrides=",">
-            userName,password,
-            <if test="phone != null">
-                phone,
-            </if>
-        </trim>
-        <trim prefix="VALUES(" suffix=")" suffixOverrides=",">
-            #{userName, jdbcType=VARCHAR},#{password, jdbcType=VARCHAR},
-            <if test="phone != null">
-                #{phone, jdbcType=VARCHAR},
-            </if>
-        </trim>
+        insert into t_user (id, name, password, phone)
+        values (#{id,jdbcType=BIGINT}, #{name,jdbcType=VARCHAR}, #{password,jdbcType=VARCHAR}, #{phone,jdbcType=VARCHAR})
     </insert>
+
+
+    <insert id="insertBatch" parameterType="java.util.List">
+        insert into t_user (id, name, password, phone)
+        values
+        <foreach collection="users" item="user" index="index" separator=",">
+            (
+            #{user.id,jdbcType=BIGINT}, #{user.name,jdbcType=VARCHAR}, #{user.password,jdbcType=VARCHAR}, #{user.phone,jdbcType=VARCHAR}
+            )
+        </foreach>
+    </insert>
+
+
 
     <select id="selectUsers" resultType="com.example.demo.domain.UserDomain">
         SELECT
