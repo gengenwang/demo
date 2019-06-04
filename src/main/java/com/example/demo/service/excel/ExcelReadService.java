@@ -1,5 +1,7 @@
 package com.example.demo.service.excel;
 
+import com.example.demo.model.excel.ExcelDownloadModel;
+
 import java.io.InputStream;
 
 /**
@@ -11,5 +13,7 @@ import java.io.InputStream;
 public interface ExcelReadService {
 
     Boolean userUpload(InputStream is, boolean if2003Version);
+
+    ExcelDownloadModel userDownload();
 
 }

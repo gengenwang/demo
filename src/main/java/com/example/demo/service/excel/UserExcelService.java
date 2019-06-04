@@ -1,5 +1,7 @@
 package com.example.demo.service.excel;
 
+import com.example.demo.domain.UserDomain;
+import org.apache.poi.hssf.usermodel.HSSFSheet;
 import org.apache.poi.ss.usermodel.Row;
 
 import java.util.List;
@@ -13,5 +15,7 @@ import java.util.List;
 public interface UserExcelService {
 
     Boolean ExcelDoing(List<Row> rows, int sta, int end);
+
+    void createRows(HSSFSheet hSSFSheet, int startRow, int endRow, List<UserDomain> userDomains);
 
 }
