@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.demo.dao.PriceDao">
+  <resultMap id="BaseResultMap" type="com.example.demo.domain.Price">
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="total" jdbcType="DECIMAL" property="total" />
+    <result column="front" jdbcType="DECIMAL" property="front" />
+    <result column="end" jdbcType="DECIMAL" property="end" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    id, total, front, end
+  </sql>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select 
+    <include refid="Base_Column_List" />
+    from price
+    where id = #{id,jdbcType=INTEGER}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+    delete from price
+    where id = #{id,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="com.example.demo.domain.Price">
+    insert into price (id, total, front, 
+      end)
+    values (#{id,jdbcType=INTEGER}, #{total,jdbcType=DECIMAL}, #{front,jdbcType=DECIMAL}, 
+      #{end,jdbcType=DECIMAL})
+  </insert>
+  <insert id="insertSelective" parameterType="com.example.demo.domain.Price">
+    insert into price
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        id,
+      </if>
+      <if test="total != null">
+        total,
+      </if>
+      <if test="front != null">
+        front,
+      </if>
+      <if test="end != null">
+        end,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        #{id,jdbcType=INTEGER},
+      </if>
+      <if test="total != null">
+        #{total,jdbcType=DECIMAL},
+      </if>
+      <if test="front != null">
+        #{front,jdbcType=DECIMAL},
+      </if>
+      <if test="end != null">
+        #{end,jdbcType=DECIMAL},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.example.demo.domain.Price">
+    update price
+    <set>
+      <if test="total != null">
+        total = #{total,jdbcType=DECIMAL},
+      </if>
+      <if test="front != null">
+        front = #{front,jdbcType=DECIMAL},
+      </if>
+      <if test="end != null">
+        end = #{end,jdbcType=DECIMAL},
+      </if>
+    </set>
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.example.demo.domain.Price">
+    update price
+    set total = #{total,jdbcType=DECIMAL},
+      front = #{front,jdbcType=DECIMAL},
+      end = #{end,jdbcType=DECIMAL}
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+</mapper>
