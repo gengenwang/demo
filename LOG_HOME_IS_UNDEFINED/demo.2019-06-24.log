@@ -1,0 +1,230 @@
+2019-06-24 17:46:29.695 [main] INFO  com.example.demo.DemoApplication - Starting DemoApplication on wanggengendeMacBook-Pro-2.local with PID 79815 (/Users/wanggengen/DevelopSoftware/IdeaWorkspace/exer/demo/target/classes started by wanggengen in /Users/wanggengen/DevelopSoftware/IdeaWorkspace/exer/demo)
+2019-06-24 17:46:29.700 [main] INFO  com.example.demo.DemoApplication - No active profile set, falling back to default profiles: default
+2019-06-24 17:46:30.145 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 5.3.5.Final
+2019-06-24 17:46:30.250 [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@5ba88be8: startup date [Mon Jun 24 17:46:30 CST 2019]; root of context hierarchy
+2019-06-24 17:46:32.305 [main] INFO  o.s.b.c.e.tomcat.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 8011 (http)
+2019-06-24 17:46:32.318 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2019-06-24 17:46:32.320 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.15
+2019-06-24 17:46:32.415 [localhost-startStop-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2019-06-24 17:46:32.415 [localhost-startStop-1] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2166 ms
+2019-06-24 17:46:32.689 [localhost-startStop-1] INFO  o.s.boot.web.servlet.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+2019-06-24 17:46:32.691 [localhost-startStop-1] INFO  o.s.boot.web.servlet.ServletRegistrationBean - Mapping servlet: 'statViewServlet' to [/druid/*]
+2019-06-24 17:46:32.695 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-06-24 17:46:32.696 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-06-24 17:46:32.696 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-06-24 17:46:32.696 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2019-06-24 17:46:32.697 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'webStatFilter' to urls: [/*]
+2019-06-24 17:46:32.787 [main] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure - Init DruidDataSource
+2019-06-24 17:46:33.506 [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2019-06-24 17:46:34.337 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@5ba88be8: startup date [Mon Jun 24 17:46:30 CST 2019]; root of context hierarchy
+2019-06-24 17:46:34.416 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/databaseLock/threadPrice]}" onto public java.lang.Boolean com.example.demo.controller.DatabaseLockController.threadPrice()
+2019-06-24 17:46:34.417 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/databaseLock/pessimisticLockPrice]}" onto public java.lang.Boolean com.example.demo.controller.DatabaseLockController.pessimisticLockPrice()
+2019-06-24 17:46:34.418 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/databaseLock/optimisticLockPriceVersion]}" onto public java.lang.Boolean com.example.demo.controller.DatabaseLockController.optimisticLockPriceVersion()
+2019-06-24 17:46:34.418 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/hello]}" onto public org.springframework.web.servlet.ModelAndView com.example.demo.controller.IndexController.index()
+2019-06-24 17:46:34.423 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/all],methods=[GET]}" onto public java.lang.Object com.example.demo.controller.UserController.findAllUser(int,int)
+2019-06-24 17:46:34.424 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/add],methods=[POST]}" onto public int com.example.demo.controller.UserController.addUser(com.example.demo.domain.UserDomain)
+2019-06-24 17:46:34.427 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/excelRead/userUpload],methods=[POST]}" onto public java.lang.Boolean com.example.demo.controller.excel.ExcelReadController.userUpload(org.springframework.web.multipart.MultipartFile) throws java.io.IOException
+2019-06-24 17:46:34.428 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/excelRead/userHtml],methods=[GET]}" onto public void com.example.demo.controller.excel.ExcelReadController.userHtml(javax.servlet.http.HttpServletResponse) throws java.io.IOException
+2019-06-24 17:46:34.428 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/excelRead/userDownload],methods=[GET]}" onto public void com.example.demo.controller.excel.ExcelReadController.userDownload(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.IOException
+2019-06-24 17:46:34.430 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-06-24 17:46:34.431 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-06-24 17:46:34.468 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-06-24 17:46:34.468 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-06-24 17:46:34.516 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-06-24 17:46:35.371 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2019-06-24 17:46:35.373 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Bean with name 'statFilter' has been autodetected for JMX exposure
+2019-06-24 17:46:35.374 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Bean with name 'dataSource' has been autodetected for JMX exposure
+2019-06-24 17:46:35.381 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.spring.boot.autoconfigure:name=dataSource,type=DruidDataSourceWrapper]
+2019-06-24 17:46:35.382 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Located MBean 'statFilter': registering with JMX server as MBean [com.alibaba.druid.filter.stat:name=statFilter,type=StatFilter]
+2019-06-24 17:46:35.398 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8011"]
+2019-06-24 17:46:35.409 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8011"]
+2019-06-24 17:46:35.437 [main] INFO  org.apache.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+2019-06-24 17:46:35.461 [main] INFO  o.s.b.c.e.tomcat.TomcatEmbeddedServletContainer - Tomcat started on port(s): 8011 (http)
+2019-06-24 17:46:35.468 [main] INFO  com.example.demo.DemoApplication - Started DemoApplication in 6.437 seconds (JVM running for 8.154)
+2019-06-24 17:47:22.218 [http-nio-8011-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2019-06-24 17:47:22.219 [http-nio-8011-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+2019-06-24 17:47:22.287 [http-nio-8011-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 67 ms
+2019-06-24 17:47:23.137 [pool-2-thread-6] DEBUG c.e.demo.dao.PriceDao.selectByPrimaryKey4Update - ==>  Preparing: select * from price where id= ? for update 
+2019-06-24 17:47:23.180 [pool-2-thread-6] DEBUG c.e.demo.dao.PriceDao.selectByPrimaryKey4Update - ==> Parameters: 1(Integer)
+2019-06-24 17:47:23.246 [pool-2-thread-6] DEBUG c.e.demo.dao.PriceDao.selectByPrimaryKey4Update - <==      Total: 1
+2019-06-24 17:47:23.250 [pool-2-thread-6] DEBUG com.example.demo.dao.PriceDao.updateByPrimaryKey - ==>  Preparing: update price set total = ?, front = ?, end = ? where id = ? 
+2019-06-24 17:47:23.252 [pool-2-thread-6] DEBUG com.example.demo.dao.PriceDao.updateByPrimaryKey - ==> Parameters: 100.00(BigDecimal), 90.00(BigDecimal), 10.00(BigDecimal), 1(Integer)
+2019-06-24 17:47:23.299 [pool-2-thread-6] DEBUG com.example.demo.dao.PriceDao.updateByPrimaryKey - <==    Updates: 1
+2019-06-24 17:47:23.314 [pool-2-thread-3] DEBUG c.e.demo.dao.PriceDao.selectByPrimaryKey4Update - ==>  Preparing: select * from price where id= ? for update 
+2019-06-24 17:47:23.314 [pool-2-thread-3] DEBUG c.e.demo.dao.PriceDao.selectByPrimaryKey4Update - ==> Parameters: 1(Integer)
+2019-06-24 17:47:23.325 [pool-2-thread-6] DEBUG com.example.demo.dao.PriceDao.insertSelective - ==>  Preparing: insert into price ( total, front, end ) values ( ?, ?, ? ) 
+2019-06-24 17:47:23.325 [pool-2-thread-6] DEBUG com.example.demo.dao.PriceDao.insertSelective - ==> Parameters: 100.00(BigDecimal), 90.00(BigDecimal), 10.00(BigDecimal)
+2019-06-24 17:47:23.377 [pool-2-thread-6] DEBUG com.example.demo.dao.PriceDao.insertSelective - <==    Updates: 1
+2019-06-24 17:47:23.405 [pool-2-thread-3] DEBUG c.e.demo.dao.PriceDao.selectByPrimaryKey4Update - <==      Total: 1
+2019-06-24 17:47:23.405 [pool-2-thread-3] DEBUG com.example.demo.dao.PriceDao.updateByPrimaryKey - ==>  Preparing: update price set total = ?, front = ?, end = ? where id = ? 
+2019-06-24 17:47:23.406 [pool-2-thread-3] DEBUG com.example.demo.dao.PriceDao.updateByPrimaryKey - ==> Parameters: 100.00(BigDecimal), 80.00(BigDecimal), 20.00(BigDecimal), 1(Integer)
+2019-06-24 17:47:23.456 [pool-2-thread-3] DEBUG com.example.demo.dao.PriceDao.updateByPrimaryKey - <==    Updates: 1
+2019-06-24 17:47:23.457 [pool-2-thread-3] DEBUG com.example.demo.dao.PriceDao.insertSelective - ==>  Preparing: insert into price ( total, front, end ) values ( ?, ?, ? ) 
+2019-06-24 17:47:23.458 [pool-2-thread-3] DEBUG com.example.demo.dao.PriceDao.insertSelective - ==> Parameters: 100.00(BigDecimal), 80.00(BigDecimal), 20.00(BigDecimal)
+2019-06-24 17:47:23.483 [pool-2-thread-8] DEBUG c.e.demo.dao.PriceDao.selectByPrimaryKey4Update - ==>  Preparing: select * from price where id= ? for update 
+2019-06-24 17:47:23.483 [pool-2-thread-8] DEBUG c.e.demo.dao.PriceDao.selectByPrimaryKey4Update - ==> Parameters: 1(Integer)
+2019-06-24 17:47:23.507 [pool-2-thread-3] DEBUG com.example.demo.dao.PriceDao.insertSelective - <==    Updates: 1
+2019-06-24 17:47:23.533 [pool-2-thread-8] DEBUG c.e.demo.dao.PriceDao.selectByPrimaryKey4Update - <==      Total: 1
+2019-06-24 17:47:23.535 [pool-2-thread-8] DEBUG com.example.demo.dao.PriceDao.updateByPrimaryKey - ==>  Preparing: update price set total = ?, front = ?, end = ? where id = ? 
+2019-06-24 17:47:23.535 [pool-2-thread-8] DEBUG com.example.demo.dao.PriceDao.updateByPrimaryKey - ==> Parameters: 100.00(BigDecimal), 70.00(BigDecimal), 30.00(BigDecimal), 1(Integer)
+2019-06-24 17:47:23.591 [pool-2-thread-8] DEBUG com.example.demo.dao.PriceDao.updateByPrimaryKey - <==    Updates: 1
+2019-06-24 17:47:23.593 [pool-2-thread-4] DEBUG c.e.demo.dao.PriceDao.selectByPrimaryKey4Update - ==>  Preparing: select * from price where id= ? for update 
+2019-06-24 17:47:23.594 [pool-2-thread-8] DEBUG com.example.demo.dao.PriceDao.insertSelective - ==>  Preparing: insert into price ( total, front, end ) values ( ?, ?, ? ) 
+2019-06-24 17:47:23.594 [pool-2-thread-4] DEBUG c.e.demo.dao.PriceDao.selectByPrimaryKey4Update - ==> Parameters: 1(Integer)
+2019-06-24 17:47:23.596 [pool-2-thread-8] DEBUG com.example.demo.dao.PriceDao.insertSelective - ==> Parameters: 100.00(BigDecimal), 70.00(BigDecimal), 30.00(BigDecimal)
+2019-06-24 17:47:23.618 [pool-2-thread-10] DEBUG c.e.demo.dao.PriceDao.selectByPrimaryKey4Update - ==>  Preparing: select * from price where id= ? for update 
+2019-06-24 17:47:23.618 [pool-2-thread-10] DEBUG c.e.demo.dao.PriceDao.selectByPrimaryKey4Update - ==> Parameters: 1(Integer)
+2019-06-24 17:47:23.647 [pool-2-thread-8] DEBUG com.example.demo.dao.PriceDao.insertSelective - <==    Updates: 1
+2019-06-24 17:47:23.673 [pool-2-thread-4] DEBUG c.e.demo.dao.PriceDao.selectByPrimaryKey4Update - <==      Total: 1
+2019-06-24 17:47:23.674 [pool-2-thread-4] DEBUG com.example.demo.dao.PriceDao.updateByPrimaryKey - ==>  Preparing: update price set total = ?, front = ?, end = ? where id = ? 
+2019-06-24 17:47:23.675 [pool-2-thread-4] DEBUG com.example.demo.dao.PriceDao.updateByPrimaryKey - ==> Parameters: 100.00(BigDecimal), 60.00(BigDecimal), 40.00(BigDecimal), 1(Integer)
+2019-06-24 17:47:23.723 [pool-2-thread-4] DEBUG com.example.demo.dao.PriceDao.updateByPrimaryKey - <==    Updates: 1
+2019-06-24 17:47:23.725 [pool-2-thread-4] DEBUG com.example.demo.dao.PriceDao.insertSelective - ==>  Preparing: insert into price ( total, front, end ) values ( ?, ?, ? ) 
+2019-06-24 17:47:23.728 [pool-2-thread-4] DEBUG com.example.demo.dao.PriceDao.insertSelective - ==> Parameters: 100.00(BigDecimal), 60.00(BigDecimal), 40.00(BigDecimal)
+2019-06-24 17:47:23.752 [pool-2-thread-2] DEBUG c.e.demo.dao.PriceDao.selectByPrimaryKey4Update - ==>  Preparing: select * from price where id= ? for update 
+2019-06-24 17:47:23.753 [pool-2-thread-2] DEBUG c.e.demo.dao.PriceDao.selectByPrimaryKey4Update - ==> Parameters: 1(Integer)
+2019-06-24 17:47:23.784 [pool-2-thread-4] DEBUG com.example.demo.dao.PriceDao.insertSelective - <==    Updates: 1
+2019-06-24 17:47:23.809 [pool-2-thread-10] DEBUG c.e.demo.dao.PriceDao.selectByPrimaryKey4Update - <==      Total: 1
+2019-06-24 17:47:23.810 [pool-2-thread-10] DEBUG com.example.demo.dao.PriceDao.updateByPrimaryKey - ==>  Preparing: update price set total = ?, front = ?, end = ? where id = ? 
+2019-06-24 17:47:23.811 [pool-2-thread-10] DEBUG com.example.demo.dao.PriceDao.updateByPrimaryKey - ==> Parameters: 100.00(BigDecimal), 50.00(BigDecimal), 50.00(BigDecimal), 1(Integer)
+2019-06-24 17:47:23.844 [pool-2-thread-9] DEBUG c.e.demo.dao.PriceDao.selectByPrimaryKey4Update - ==>  Preparing: select * from price where id= ? for update 
+2019-06-24 17:47:23.847 [pool-2-thread-9] DEBUG c.e.demo.dao.PriceDao.selectByPrimaryKey4Update - ==> Parameters: 1(Integer)
+2019-06-24 17:47:23.864 [pool-2-thread-10] DEBUG com.example.demo.dao.PriceDao.updateByPrimaryKey - <==    Updates: 1
+2019-06-24 17:47:23.865 [pool-2-thread-10] DEBUG com.example.demo.dao.PriceDao.insertSelective - ==>  Preparing: insert into price ( total, front, end ) values ( ?, ?, ? ) 
+2019-06-24 17:47:23.866 [pool-2-thread-10] DEBUG com.example.demo.dao.PriceDao.insertSelective - ==> Parameters: 100.00(BigDecimal), 50.00(BigDecimal), 50.00(BigDecimal)
+2019-06-24 17:47:23.888 [pool-2-thread-1] DEBUG c.e.demo.dao.PriceDao.selectByPrimaryKey4Update - ==>  Preparing: select * from price where id= ? for update 
+2019-06-24 17:47:23.888 [pool-2-thread-1] DEBUG c.e.demo.dao.PriceDao.selectByPrimaryKey4Update - ==> Parameters: 1(Integer)
+2019-06-24 17:47:23.925 [pool-2-thread-10] DEBUG com.example.demo.dao.PriceDao.insertSelective - <==    Updates: 1
+2019-06-24 17:47:23.952 [pool-2-thread-2] DEBUG c.e.demo.dao.PriceDao.selectByPrimaryKey4Update - <==      Total: 1
+2019-06-24 17:47:23.954 [pool-2-thread-2] DEBUG com.example.demo.dao.PriceDao.updateByPrimaryKey - ==>  Preparing: update price set total = ?, front = ?, end = ? where id = ? 
+2019-06-24 17:47:23.955 [pool-2-thread-2] DEBUG com.example.demo.dao.PriceDao.updateByPrimaryKey - ==> Parameters: 100.00(BigDecimal), 40.00(BigDecimal), 60.00(BigDecimal), 1(Integer)
+2019-06-24 17:47:24.005 [pool-2-thread-2] DEBUG com.example.demo.dao.PriceDao.updateByPrimaryKey - <==    Updates: 1
+2019-06-24 17:47:24.006 [pool-2-thread-2] DEBUG com.example.demo.dao.PriceDao.insertSelective - ==>  Preparing: insert into price ( total, front, end ) values ( ?, ?, ? ) 
+2019-06-24 17:47:24.007 [pool-2-thread-2] DEBUG com.example.demo.dao.PriceDao.insertSelective - ==> Parameters: 100.00(BigDecimal), 40.00(BigDecimal), 60.00(BigDecimal)
+2019-06-24 17:47:24.040 [pool-2-thread-7] DEBUG c.e.demo.dao.PriceDao.selectByPrimaryKey4Update - ==>  Preparing: select * from price where id= ? for update 
+2019-06-24 17:47:24.041 [pool-2-thread-7] DEBUG c.e.demo.dao.PriceDao.selectByPrimaryKey4Update - ==> Parameters: 1(Integer)
+2019-06-24 17:47:24.073 [pool-2-thread-2] DEBUG com.example.demo.dao.PriceDao.insertSelective - <==    Updates: 1
+2019-06-24 17:47:24.100 [pool-2-thread-5] DEBUG c.e.demo.dao.PriceDao.selectByPrimaryKey4Update - ==>  Preparing: select * from price where id= ? for update 
+2019-06-24 17:47:24.101 [pool-2-thread-9] DEBUG c.e.demo.dao.PriceDao.selectByPrimaryKey4Update - <==      Total: 1
+2019-06-24 17:47:24.102 [pool-2-thread-9] DEBUG com.example.demo.dao.PriceDao.updateByPrimaryKey - ==>  Preparing: update price set total = ?, front = ?, end = ? where id = ? 
+2019-06-24 17:47:24.101 [pool-2-thread-5] DEBUG c.e.demo.dao.PriceDao.selectByPrimaryKey4Update - ==> Parameters: 1(Integer)
+2019-06-24 17:47:24.103 [pool-2-thread-9] DEBUG com.example.demo.dao.PriceDao.updateByPrimaryKey - ==> Parameters: 100.00(BigDecimal), 30.00(BigDecimal), 70.00(BigDecimal), 1(Integer)
+2019-06-24 17:47:24.177 [pool-2-thread-9] DEBUG com.example.demo.dao.PriceDao.updateByPrimaryKey - <==    Updates: 1
+2019-06-24 17:47:24.178 [pool-2-thread-9] DEBUG com.example.demo.dao.PriceDao.insertSelective - ==>  Preparing: insert into price ( total, front, end ) values ( ?, ?, ? ) 
+2019-06-24 17:47:24.179 [pool-2-thread-9] DEBUG com.example.demo.dao.PriceDao.insertSelective - ==> Parameters: 100.00(BigDecimal), 30.00(BigDecimal), 70.00(BigDecimal)
+2019-06-24 17:47:24.244 [pool-2-thread-9] DEBUG com.example.demo.dao.PriceDao.insertSelective - <==    Updates: 1
+2019-06-24 17:47:24.279 [pool-2-thread-1] DEBUG c.e.demo.dao.PriceDao.selectByPrimaryKey4Update - <==      Total: 1
+2019-06-24 17:47:24.281 [pool-2-thread-1] DEBUG com.example.demo.dao.PriceDao.updateByPrimaryKey - ==>  Preparing: update price set total = ?, front = ?, end = ? where id = ? 
+2019-06-24 17:47:24.282 [pool-2-thread-1] DEBUG com.example.demo.dao.PriceDao.updateByPrimaryKey - ==> Parameters: 100.00(BigDecimal), 20.00(BigDecimal), 80.00(BigDecimal), 1(Integer)
+2019-06-24 17:47:24.338 [pool-2-thread-1] DEBUG com.example.demo.dao.PriceDao.updateByPrimaryKey - <==    Updates: 1
+2019-06-24 17:47:24.340 [pool-2-thread-1] DEBUG com.example.demo.dao.PriceDao.insertSelective - ==>  Preparing: insert into price ( total, front, end ) values ( ?, ?, ? ) 
+2019-06-24 17:47:24.341 [pool-2-thread-1] DEBUG com.example.demo.dao.PriceDao.insertSelective - ==> Parameters: 100.00(BigDecimal), 20.00(BigDecimal), 80.00(BigDecimal)
+2019-06-24 17:47:24.389 [pool-2-thread-1] DEBUG com.example.demo.dao.PriceDao.insertSelective - <==    Updates: 1
+2019-06-24 17:47:24.417 [pool-2-thread-7] DEBUG c.e.demo.dao.PriceDao.selectByPrimaryKey4Update - <==      Total: 1
+2019-06-24 17:47:24.418 [pool-2-thread-7] DEBUG com.example.demo.dao.PriceDao.updateByPrimaryKey - ==>  Preparing: update price set total = ?, front = ?, end = ? where id = ? 
+2019-06-24 17:47:24.418 [pool-2-thread-7] DEBUG com.example.demo.dao.PriceDao.updateByPrimaryKey - ==> Parameters: 100.00(BigDecimal), 10.00(BigDecimal), 90.00(BigDecimal), 1(Integer)
+2019-06-24 17:47:24.467 [pool-2-thread-7] DEBUG com.example.demo.dao.PriceDao.updateByPrimaryKey - <==    Updates: 1
+2019-06-24 17:47:24.468 [pool-2-thread-7] DEBUG com.example.demo.dao.PriceDao.insertSelective - ==>  Preparing: insert into price ( total, front, end ) values ( ?, ?, ? ) 
+2019-06-24 17:47:24.468 [pool-2-thread-7] DEBUG com.example.demo.dao.PriceDao.insertSelective - ==> Parameters: 100.00(BigDecimal), 10.00(BigDecimal), 90.00(BigDecimal)
+2019-06-24 17:47:24.517 [pool-2-thread-7] DEBUG com.example.demo.dao.PriceDao.insertSelective - <==    Updates: 1
+2019-06-24 17:47:24.540 [pool-2-thread-5] DEBUG c.e.demo.dao.PriceDao.selectByPrimaryKey4Update - <==      Total: 1
+2019-06-24 17:47:24.541 [pool-2-thread-5] DEBUG com.example.demo.dao.PriceDao.updateByPrimaryKey - ==>  Preparing: update price set total = ?, front = ?, end = ? where id = ? 
+2019-06-24 17:47:24.541 [pool-2-thread-5] DEBUG com.example.demo.dao.PriceDao.updateByPrimaryKey - ==> Parameters: 100.00(BigDecimal), 0.00(BigDecimal), 100.00(BigDecimal), 1(Integer)
+2019-06-24 17:47:24.589 [pool-2-thread-5] DEBUG com.example.demo.dao.PriceDao.updateByPrimaryKey - <==    Updates: 1
+2019-06-24 17:47:24.590 [pool-2-thread-5] DEBUG com.example.demo.dao.PriceDao.insertSelective - ==>  Preparing: insert into price ( total, front, end ) values ( ?, ?, ? ) 
+2019-06-24 17:47:24.591 [pool-2-thread-5] DEBUG com.example.demo.dao.PriceDao.insertSelective - ==> Parameters: 100.00(BigDecimal), 0.00(BigDecimal), 100.00(BigDecimal)
+2019-06-24 17:47:24.638 [pool-2-thread-5] DEBUG com.example.demo.dao.PriceDao.insertSelective - <==    Updates: 1
+2019-06-24 17:47:54.991 [pool-3-thread-1] DEBUG c.e.demo.dao.PriceDao.selectByPrimaryKey4Update - ==>  Preparing: select * from price where id= ? for update 
+2019-06-24 17:47:54.992 [pool-3-thread-1] DEBUG c.e.demo.dao.PriceDao.selectByPrimaryKey4Update - ==> Parameters: 1(Integer)
+2019-06-24 17:47:54.993 [pool-3-thread-2] DEBUG c.e.demo.dao.PriceDao.selectByPrimaryKey4Update - ==>  Preparing: select * from price where id= ? for update 
+2019-06-24 17:47:54.994 [pool-3-thread-3] DEBUG c.e.demo.dao.PriceDao.selectByPrimaryKey4Update - ==>  Preparing: select * from price where id= ? for update 
+2019-06-24 17:47:54.994 [pool-3-thread-2] DEBUG c.e.demo.dao.PriceDao.selectByPrimaryKey4Update - ==> Parameters: 1(Integer)
+2019-06-24 17:47:54.994 [pool-3-thread-3] DEBUG c.e.demo.dao.PriceDao.selectByPrimaryKey4Update - ==> Parameters: 1(Integer)
+2019-06-24 17:47:54.993 [pool-3-thread-4] DEBUG c.e.demo.dao.PriceDao.selectByPrimaryKey4Update - ==>  Preparing: select * from price where id= ? for update 
+2019-06-24 17:47:54.995 [pool-3-thread-5] DEBUG c.e.demo.dao.PriceDao.selectByPrimaryKey4Update - ==>  Preparing: select * from price where id= ? for update 
+2019-06-24 17:47:54.995 [pool-3-thread-5] DEBUG c.e.demo.dao.PriceDao.selectByPrimaryKey4Update - ==> Parameters: 1(Integer)
+2019-06-24 17:47:54.996 [pool-3-thread-4] DEBUG c.e.demo.dao.PriceDao.selectByPrimaryKey4Update - ==> Parameters: 1(Integer)
+2019-06-24 17:47:55.020 [pool-3-thread-1] DEBUG c.e.demo.dao.PriceDao.selectByPrimaryKey4Update - <==      Total: 1
+2019-06-24 17:47:55.021 [pool-3-thread-1] DEBUG com.example.demo.dao.PriceDao.updateByPrimaryKey - ==>  Preparing: update price set total = ?, front = ?, end = ? where id = ? 
+2019-06-24 17:47:55.021 [pool-3-thread-1] DEBUG com.example.demo.dao.PriceDao.updateByPrimaryKey - ==> Parameters: 100.00(BigDecimal), -10.00(BigDecimal), 110.00(BigDecimal), 1(Integer)
+2019-06-24 17:47:55.068 [pool-3-thread-1] DEBUG com.example.demo.dao.PriceDao.updateByPrimaryKey - <==    Updates: 1
+2019-06-24 17:47:55.069 [pool-3-thread-1] DEBUG com.example.demo.dao.PriceDao.insertSelective - ==>  Preparing: insert into price ( total, front, end ) values ( ?, ?, ? ) 
+2019-06-24 17:47:55.070 [pool-3-thread-1] DEBUG com.example.demo.dao.PriceDao.insertSelective - ==> Parameters: 100.00(BigDecimal), -10.00(BigDecimal), 110.00(BigDecimal)
+2019-06-24 17:47:55.123 [pool-3-thread-1] DEBUG com.example.demo.dao.PriceDao.insertSelective - <==    Updates: 1
+2019-06-24 17:47:55.149 [pool-3-thread-2] DEBUG c.e.demo.dao.PriceDao.selectByPrimaryKey4Update - <==      Total: 1
+2019-06-24 17:47:55.150 [pool-3-thread-2] DEBUG com.example.demo.dao.PriceDao.updateByPrimaryKey - ==>  Preparing: update price set total = ?, front = ?, end = ? where id = ? 
+2019-06-24 17:47:55.150 [pool-3-thread-2] DEBUG com.example.demo.dao.PriceDao.updateByPrimaryKey - ==> Parameters: 100.00(BigDecimal), -20.00(BigDecimal), 120.00(BigDecimal), 1(Integer)
+2019-06-24 17:47:55.204 [pool-3-thread-2] DEBUG com.example.demo.dao.PriceDao.updateByPrimaryKey - <==    Updates: 1
+2019-06-24 17:47:55.206 [pool-3-thread-2] DEBUG com.example.demo.dao.PriceDao.insertSelective - ==>  Preparing: insert into price ( total, front, end ) values ( ?, ?, ? ) 
+2019-06-24 17:47:55.207 [pool-3-thread-2] DEBUG com.example.demo.dao.PriceDao.insertSelective - ==> Parameters: 100.00(BigDecimal), -20.00(BigDecimal), 120.00(BigDecimal)
+2019-06-24 17:47:55.242 [pool-3-thread-6] DEBUG c.e.demo.dao.PriceDao.selectByPrimaryKey4Update - ==>  Preparing: select * from price where id= ? for update 
+2019-06-24 17:47:55.242 [pool-3-thread-6] DEBUG c.e.demo.dao.PriceDao.selectByPrimaryKey4Update - ==> Parameters: 1(Integer)
+2019-06-24 17:47:55.261 [pool-3-thread-2] DEBUG com.example.demo.dao.PriceDao.insertSelective - <==    Updates: 1
+2019-06-24 17:47:55.268 [pool-3-thread-7] DEBUG c.e.demo.dao.PriceDao.selectByPrimaryKey4Update - ==>  Preparing: select * from price where id= ? for update 
+2019-06-24 17:47:55.268 [pool-3-thread-7] DEBUG c.e.demo.dao.PriceDao.selectByPrimaryKey4Update - ==> Parameters: 1(Integer)
+2019-06-24 17:47:55.287 [pool-3-thread-3] DEBUG c.e.demo.dao.PriceDao.selectByPrimaryKey4Update - <==      Total: 1
+2019-06-24 17:47:55.288 [pool-3-thread-3] DEBUG com.example.demo.dao.PriceDao.updateByPrimaryKey - ==>  Preparing: update price set total = ?, front = ?, end = ? where id = ? 
+2019-06-24 17:47:55.288 [pool-3-thread-3] DEBUG com.example.demo.dao.PriceDao.updateByPrimaryKey - ==> Parameters: 100.00(BigDecimal), -30.00(BigDecimal), 130.00(BigDecimal), 1(Integer)
+2019-06-24 17:47:55.344 [pool-3-thread-3] DEBUG com.example.demo.dao.PriceDao.updateByPrimaryKey - <==    Updates: 1
+2019-06-24 17:47:55.345 [pool-3-thread-3] DEBUG com.example.demo.dao.PriceDao.insertSelective - ==>  Preparing: insert into price ( total, front, end ) values ( ?, ?, ? ) 
+2019-06-24 17:47:55.346 [pool-3-thread-3] DEBUG com.example.demo.dao.PriceDao.insertSelective - ==> Parameters: 100.00(BigDecimal), -30.00(BigDecimal), 130.00(BigDecimal)
+2019-06-24 17:47:55.390 [pool-3-thread-8] DEBUG c.e.demo.dao.PriceDao.selectByPrimaryKey4Update - ==>  Preparing: select * from price where id= ? for update 
+2019-06-24 17:47:55.391 [pool-3-thread-8] DEBUG c.e.demo.dao.PriceDao.selectByPrimaryKey4Update - ==> Parameters: 1(Integer)
+2019-06-24 17:47:55.396 [pool-3-thread-3] DEBUG com.example.demo.dao.PriceDao.insertSelective - <==    Updates: 1
+2019-06-24 17:47:55.423 [pool-3-thread-5] DEBUG c.e.demo.dao.PriceDao.selectByPrimaryKey4Update - <==      Total: 1
+2019-06-24 17:47:55.423 [pool-3-thread-5] DEBUG com.example.demo.dao.PriceDao.updateByPrimaryKey - ==>  Preparing: update price set total = ?, front = ?, end = ? where id = ? 
+2019-06-24 17:47:55.424 [pool-3-thread-5] DEBUG com.example.demo.dao.PriceDao.updateByPrimaryKey - ==> Parameters: 100.00(BigDecimal), -40.00(BigDecimal), 140.00(BigDecimal), 1(Integer)
+2019-06-24 17:47:55.477 [pool-3-thread-5] DEBUG com.example.demo.dao.PriceDao.updateByPrimaryKey - <==    Updates: 1
+2019-06-24 17:47:55.478 [pool-3-thread-5] DEBUG com.example.demo.dao.PriceDao.insertSelective - ==>  Preparing: insert into price ( total, front, end ) values ( ?, ?, ? ) 
+2019-06-24 17:47:55.478 [pool-3-thread-5] DEBUG com.example.demo.dao.PriceDao.insertSelective - ==> Parameters: 100.00(BigDecimal), -40.00(BigDecimal), 140.00(BigDecimal)
+2019-06-24 17:47:55.507 [pool-3-thread-9] DEBUG c.e.demo.dao.PriceDao.selectByPrimaryKey4Update - ==>  Preparing: select * from price where id= ? for update 
+2019-06-24 17:47:55.507 [pool-3-thread-9] DEBUG c.e.demo.dao.PriceDao.selectByPrimaryKey4Update - ==> Parameters: 1(Integer)
+2019-06-24 17:47:55.532 [pool-3-thread-5] DEBUG com.example.demo.dao.PriceDao.insertSelective - <==    Updates: 1
+2019-06-24 17:47:55.556 [pool-3-thread-4] DEBUG c.e.demo.dao.PriceDao.selectByPrimaryKey4Update - <==      Total: 1
+2019-06-24 17:47:55.557 [pool-3-thread-4] DEBUG com.example.demo.dao.PriceDao.updateByPrimaryKey - ==>  Preparing: update price set total = ?, front = ?, end = ? where id = ? 
+2019-06-24 17:47:55.558 [pool-3-thread-4] DEBUG com.example.demo.dao.PriceDao.updateByPrimaryKey - ==> Parameters: 100.00(BigDecimal), -50.00(BigDecimal), 150.00(BigDecimal), 1(Integer)
+2019-06-24 17:47:55.606 [pool-3-thread-4] DEBUG com.example.demo.dao.PriceDao.updateByPrimaryKey - <==    Updates: 1
+2019-06-24 17:47:55.607 [pool-3-thread-4] DEBUG com.example.demo.dao.PriceDao.insertSelective - ==>  Preparing: insert into price ( total, front, end ) values ( ?, ?, ? ) 
+2019-06-24 17:47:55.607 [pool-3-thread-4] DEBUG com.example.demo.dao.PriceDao.insertSelective - ==> Parameters: 100.00(BigDecimal), -50.00(BigDecimal), 150.00(BigDecimal)
+2019-06-24 17:47:55.634 [pool-3-thread-10] DEBUG c.e.demo.dao.PriceDao.selectByPrimaryKey4Update - ==>  Preparing: select * from price where id= ? for update 
+2019-06-24 17:47:55.634 [pool-3-thread-10] DEBUG c.e.demo.dao.PriceDao.selectByPrimaryKey4Update - ==> Parameters: 1(Integer)
+2019-06-24 17:47:55.653 [pool-3-thread-4] DEBUG com.example.demo.dao.PriceDao.insertSelective - <==    Updates: 1
+2019-06-24 17:47:55.683 [pool-3-thread-7] DEBUG c.e.demo.dao.PriceDao.selectByPrimaryKey4Update - <==      Total: 1
+2019-06-24 17:47:55.685 [pool-3-thread-7] DEBUG com.example.demo.dao.PriceDao.updateByPrimaryKey - ==>  Preparing: update price set total = ?, front = ?, end = ? where id = ? 
+2019-06-24 17:47:55.686 [pool-3-thread-7] DEBUG com.example.demo.dao.PriceDao.updateByPrimaryKey - ==> Parameters: 100.00(BigDecimal), -60.00(BigDecimal), 160.00(BigDecimal), 1(Integer)
+2019-06-24 17:47:55.746 [pool-3-thread-7] DEBUG com.example.demo.dao.PriceDao.updateByPrimaryKey - <==    Updates: 1
+2019-06-24 17:47:55.748 [pool-3-thread-7] DEBUG com.example.demo.dao.PriceDao.insertSelective - ==>  Preparing: insert into price ( total, front, end ) values ( ?, ?, ? ) 
+2019-06-24 17:47:55.749 [pool-3-thread-7] DEBUG com.example.demo.dao.PriceDao.insertSelective - ==> Parameters: 100.00(BigDecimal), -60.00(BigDecimal), 160.00(BigDecimal)
+2019-06-24 17:47:55.796 [pool-3-thread-7] DEBUG com.example.demo.dao.PriceDao.insertSelective - <==    Updates: 1
+2019-06-24 17:47:55.824 [pool-3-thread-6] DEBUG c.e.demo.dao.PriceDao.selectByPrimaryKey4Update - <==      Total: 1
+2019-06-24 17:47:55.825 [pool-3-thread-6] DEBUG com.example.demo.dao.PriceDao.updateByPrimaryKey - ==>  Preparing: update price set total = ?, front = ?, end = ? where id = ? 
+2019-06-24 17:47:55.825 [pool-3-thread-6] DEBUG com.example.demo.dao.PriceDao.updateByPrimaryKey - ==> Parameters: 100.00(BigDecimal), -70.00(BigDecimal), 170.00(BigDecimal), 1(Integer)
+2019-06-24 17:47:55.872 [pool-3-thread-6] DEBUG com.example.demo.dao.PriceDao.updateByPrimaryKey - <==    Updates: 1
+2019-06-24 17:47:55.872 [pool-3-thread-6] DEBUG com.example.demo.dao.PriceDao.insertSelective - ==>  Preparing: insert into price ( total, front, end ) values ( ?, ?, ? ) 
+2019-06-24 17:47:55.873 [pool-3-thread-6] DEBUG com.example.demo.dao.PriceDao.insertSelective - ==> Parameters: 100.00(BigDecimal), -70.00(BigDecimal), 170.00(BigDecimal)
+2019-06-24 17:47:55.918 [pool-3-thread-6] DEBUG com.example.demo.dao.PriceDao.insertSelective - <==    Updates: 1
+2019-06-24 17:47:55.944 [pool-3-thread-8] DEBUG c.e.demo.dao.PriceDao.selectByPrimaryKey4Update - <==      Total: 1
+2019-06-24 17:47:55.944 [pool-3-thread-8] DEBUG com.example.demo.dao.PriceDao.updateByPrimaryKey - ==>  Preparing: update price set total = ?, front = ?, end = ? where id = ? 
+2019-06-24 17:47:55.945 [pool-3-thread-8] DEBUG com.example.demo.dao.PriceDao.updateByPrimaryKey - ==> Parameters: 100.00(BigDecimal), -80.00(BigDecimal), 180.00(BigDecimal), 1(Integer)
+2019-06-24 17:47:55.991 [pool-3-thread-8] DEBUG com.example.demo.dao.PriceDao.updateByPrimaryKey - <==    Updates: 1
+2019-06-24 17:47:55.992 [pool-3-thread-8] DEBUG com.example.demo.dao.PriceDao.insertSelective - ==>  Preparing: insert into price ( total, front, end ) values ( ?, ?, ? ) 
+2019-06-24 17:47:55.993 [pool-3-thread-8] DEBUG com.example.demo.dao.PriceDao.insertSelective - ==> Parameters: 100.00(BigDecimal), -80.00(BigDecimal), 180.00(BigDecimal)
+2019-06-24 17:47:56.058 [pool-3-thread-8] DEBUG com.example.demo.dao.PriceDao.insertSelective - <==    Updates: 1
+2019-06-24 17:47:56.082 [pool-3-thread-9] DEBUG c.e.demo.dao.PriceDao.selectByPrimaryKey4Update - <==      Total: 1
+2019-06-24 17:47:56.083 [pool-3-thread-9] DEBUG com.example.demo.dao.PriceDao.updateByPrimaryKey - ==>  Preparing: update price set total = ?, front = ?, end = ? where id = ? 
+2019-06-24 17:47:56.083 [pool-3-thread-9] DEBUG com.example.demo.dao.PriceDao.updateByPrimaryKey - ==> Parameters: 100.00(BigDecimal), -90.00(BigDecimal), 190.00(BigDecimal), 1(Integer)
+2019-06-24 17:47:56.133 [pool-3-thread-9] DEBUG com.example.demo.dao.PriceDao.updateByPrimaryKey - <==    Updates: 1
+2019-06-24 17:47:56.134 [pool-3-thread-9] DEBUG com.example.demo.dao.PriceDao.insertSelective - ==>  Preparing: insert into price ( total, front, end ) values ( ?, ?, ? ) 
+2019-06-24 17:47:56.135 [pool-3-thread-9] DEBUG com.example.demo.dao.PriceDao.insertSelective - ==> Parameters: 100.00(BigDecimal), -90.00(BigDecimal), 190.00(BigDecimal)
+2019-06-24 17:47:56.184 [pool-3-thread-9] DEBUG com.example.demo.dao.PriceDao.insertSelective - <==    Updates: 1
+2019-06-24 17:47:56.208 [pool-3-thread-10] DEBUG c.e.demo.dao.PriceDao.selectByPrimaryKey4Update - <==      Total: 1
+2019-06-24 17:47:56.209 [pool-3-thread-10] DEBUG com.example.demo.dao.PriceDao.updateByPrimaryKey - ==>  Preparing: update price set total = ?, front = ?, end = ? where id = ? 
+2019-06-24 17:47:56.210 [pool-3-thread-10] DEBUG com.example.demo.dao.PriceDao.updateByPrimaryKey - ==> Parameters: 100.00(BigDecimal), -100.00(BigDecimal), 200.00(BigDecimal), 1(Integer)
+2019-06-24 17:47:56.265 [pool-3-thread-10] DEBUG com.example.demo.dao.PriceDao.updateByPrimaryKey - <==    Updates: 1
+2019-06-24 17:47:56.266 [pool-3-thread-10] DEBUG com.example.demo.dao.PriceDao.insertSelective - ==>  Preparing: insert into price ( total, front, end ) values ( ?, ?, ? ) 
+2019-06-24 17:47:56.267 [pool-3-thread-10] DEBUG com.example.demo.dao.PriceDao.insertSelective - ==> Parameters: 100.00(BigDecimal), -100.00(BigDecimal), 200.00(BigDecimal)
+2019-06-24 17:47:56.333 [pool-3-thread-10] DEBUG com.example.demo.dao.PriceDao.insertSelective - <==    Updates: 1
+2019-06-24 17:52:44.347 [Thread-17] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@5ba88be8: startup date [Mon Jun 24 17:46:30 CST 2019]; root of context hierarchy
+2019-06-24 17:52:44.351 [Thread-17] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Unregistering JMX-exposed beans on shutdown
+2019-06-24 17:52:44.352 [Thread-17] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Unregistering JMX-exposed beans
+2019-06-24 17:52:44.365 [Thread-17] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed

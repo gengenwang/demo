@@ -98,6 +98,12 @@
             <version>3.9</version>
         </dependency>
 
+        <!-- 添加日志 -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-logging</artifactId>
+        </dependency>
+        <!-- 定时任务和@Slf4j注解日志的依赖 -->
         <!-- lombok -->
         <dependency>
             <groupId>org.projectlombok</groupId>
@@ -119,6 +125,7 @@
             <artifactId>junit</artifactId>
             <version>4.12</version>
         </dependency>
+
 
 
         <!--添加依赖结束-->

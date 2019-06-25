@@ -62,7 +62,7 @@ public class DatabaseLockServiceImpl implements DatabaseLockService {
         priceDao.updateByPrimaryKey(price);
         price.setId(null);
         priceDao.insertSelective(price);
-        System.out.println("代码执行");
+        log.info("代码执行");
 
     }
 
@@ -84,7 +84,7 @@ public class DatabaseLockServiceImpl implements DatabaseLockService {
         priceDao.updateByPrimaryKey(price);
         price.setId(null);
         priceDao.insertSelective(price);
-        System.out.println("代码执行");
+        log.info("代码执行");
     }
 
     /**
@@ -96,13 +96,13 @@ public class DatabaseLockServiceImpl implements DatabaseLockService {
     public void optimisticLockPriceVersion() {
         PriceVersion priceVersion = priceVersionDao.selectByPrimaryKey(1);
         int ron = new Random().nextInt(20);
-        System.out.println(Thread.currentThread().getName() + "本次消费=" + ron);
+        log.info("[{}]本次消费[{}]", Thread.currentThread().getName(), ron);
         priceVersion.setFront(new BigDecimal(ron).add(priceVersion.getFront()));
         int count = priceVersionDao.updateByVersion(priceVersion);
         if (count == 0) {
-            System.out.println(Thread.currentThread().getName() + "更新失败");
+            log.info("[{}],更新失败", Thread.currentThread().getName());
         } else {
-            System.out.println(Thread.currentThread().getName() + "更新成功");
+            log.info("[{}],更新成功", Thread.currentThread().getName());
         }
 
     }
