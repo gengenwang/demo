@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE generatorConfiguration
+        PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN"
+        "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd">
+<generatorConfiguration>
+    <!--指定特定数据库的jdbc驱动jar包的位置-->
+    <classPathEntry
+            location="/Users/wanggengen/DevelopSoftware/MavenRepository/mysql/mysql-connector-java/5.1.39/mysql-connector-java-5.1.39.jar"/>
+    <context id="DB2Tables" targetRuntime="MyBatis3">
+        <!-- 生成的Java文件的编码 -->
+        <property name="javaFileEncoding" value="UTF-8" />
+        <!-- 格式化java代码 -->
+        <property name="javaFormatter" value="org.mybatis.generator.api.dom.DefaultJavaFormatter" />
+        <!-- JavaBean 实现 序列化 接口 -->
+        <plugin type="org.mybatis.generator.plugins.SerializablePlugin"/>
+
+        <!-- 自定义注释生成器 -->
+        <commentGenerator type="org.mybatis.generator.internal.MyCommentGenerator">
+            <property name="author" value="gengen.wang"/>
+            <property name="dateFormat" value="yyyy/MM/dd"/>
+        </commentGenerator>
+
+        <!-- 数据库配置:修改配置 -->
+        <jdbcConnection driverClass="com.mysql.cj.jdbc.Driver"
+                        connectionURL="jdbc:mysql://106.12.27.241:3306/demo?characterEncoding=utf-8"
+                        userId="root"  password="root">
+            <property name="useInformationSchema" value="true" />
+        </jdbcConnection>
+
+        <!-- 非必需，类型处理器，在数据库类型和java类型之间的转换控制-->
+        <javaTypeResolver>
+            <property name="forceBigDecimals" value="false" />
+        </javaTypeResolver>
+
+        <!-- 持久化对象：targetPackage：指定生成的model生成所在的包名
+                       targetProject：指定在该项目下所在的路径
+        -->
+        <javaModelGenerator targetPackage="com.example.demo.domain"
+                            targetProject="src/main/java">
+            <property name="enableSubPackages" value="true" />
+            <property name="trimStrings" value="true" />
+        </javaModelGenerator>
+
+        <!-- 数据访问对象接口: targetPackage：修改包名
+                               targetProject：修改项目名 或 去除 -->
+        <sqlMapGenerator targetPackage="mapper"
+                         targetProject="src/main/resources">
+            <property name="enableSubPackages" value="true" />
+        </sqlMapGenerator>
+
+        <!-- 数据访问对象xml实现:targetPackage：修改包名
+                                 targetProject：修改项目名 或 去除 -->
+        <javaClientGenerator type="XMLMAPPER" targetPackage="com.example.demo.dao"
+                             targetProject="src/main/java">
+            <property name="enableSubPackages" value="true" />
+        </javaClientGenerator>
+
+        <!-- 表转代码：tableName：修改表名 -->
+        <table tableName="price_version_new"
+               enableCountByExample="false"
+               enableUpdateByExample="false"
+               enableDeleteByExample="false"
+               enableSelectByExample="false"
+               selectByExampleQueryId="false"
+               enableInsert="true"
+               enableUpdateByPrimaryKey="true"
+               enableDeleteByPrimaryKey="true">
+            <property name="useActualColumnNames" value="false" />
+        </table>
+
+    </context>
+</generatorConfiguration>
