@@ -8,7 +8,7 @@ package design.mode.singleton;
  **/
 public class LazySingleton {
 
-    //私有化实例对象，volatile修饰内存中可见
+    //私有化实例对象，volatile修饰禁止指令重排序
     private volatile static LazySingleton singleton;
 
     //私有化构造器
